@@ -1,2 +1,18 @@
-<label text="Lorem Ipsum..." textWrap="true"></label>
-<Button text="Tap me!"></Button>
+<gridlayout columns="* * *" rows="80 40 80 80" id="contenedor">
+  <SearchBar
+    hint="Enter search term here ..."
+    col="0"
+    colspan="3"
+    row="0"
+  ></SearchBar>
+  <TextField hint="Nombre" col="0" row="1"></TextField>
+  <TextField hint="Apellidos" col="1" colspan="2" row="1"></TextField>
+  <Button
+    text="Tap me!"
+    col="0"
+    colspan="3"
+    row="2"
+    class="h1"
+    (tap)="changeMode($event)"
+  ></Button>
+</gridlayout>
